@@ -1,11 +1,21 @@
 package com.hotelreservation;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ReservationSystem {
 
-	List<Hotels> reservationsys = new ArrayList<>();
+	static List<Hotels> reservationsys = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		
+		ReservationSystem reservation = new ReservationSystem();
+		
+		reservation.addHotels();
+		
+		
+	}
 	
 	public void addHotels() {
 		
@@ -16,5 +26,7 @@ public class ReservationSystem {
 		reservationsys.add(hotel1);
 		reservationsys.add(hotel2);
 		reservationsys.add(hotel3);
+		System.out.println("Hotels added Successfully");
 	}
+	
 }
