@@ -1,52 +1,39 @@
 package com.hotelreservation;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class Hotels {
-
-	String hotel_name;
-	int weekday_rate;
-	int weekend_rate;
-	int rating;
-
+	
+	private ReservationSystem hotelsreservation = new ReservationSystem();
+	
+	public void lakeWood() {
+		List<Integer> lakewoodRegular = new ArrayList<>();
+		lakewoodRegular.add(110);
+		lakewoodRegular.add(90);
+		
+		hotelsreservation.lakewood.put("Regular", lakewoodRegular);
+	}
+	
+	public void bridgeWood() {
+		List<Integer> bridgeWoodRegular = new ArrayList<>();
+		bridgeWoodRegular.add(160);
+		bridgeWoodRegular.add(60);
+		
+		hotelsreservation.bridgewood.put("Regualr", bridgeWoodRegular);
+		
+	}
+	
+	public void ridgewood() {
+		List<Integer> ridgewoodRegular = new ArrayList<>();
+		ridgewoodRegular.add(220);
+		ridgewoodRegular.add(150);
+		
+		hotelsreservation.ridgewood.put("Regular", ridgewoodRegular);
+	}
 	
 	
-	public Hotels(String hotel_name, int weekday_rate, int weekend_rate, int rating) {
-		super();
-		this.hotel_name = hotel_name;
-		this.weekday_rate = weekday_rate;
-		this.weekend_rate = weekend_rate;
-		this.rating = rating;
-	}
-
-	public String getHotel_name() {
-		return hotel_name;
-	}
-
-	public void setHotel_name(String hotel_name) {
-		this.hotel_name = hotel_name;
-	}
-
-	public int getWeekday_rate() {
-		return weekday_rate;
-	}
-
-	public void setWeekday_rate(int weekday_rate) {
-		this.weekday_rate = weekday_rate;
-	}
-
-	public int getWeekend_rate() {
-		return weekend_rate;
-	}
-
-	public void setWeekend_rate(int weekend_rate) {
-		this.weekend_rate = weekend_rate;
-	}
-
-	public int getRating() {
-		return rating;
-	}
-
-	public void setRating(int rating) {
-		this.rating = rating;
-	}
-
+	
+	
 }
