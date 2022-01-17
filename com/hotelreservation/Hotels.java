@@ -6,31 +6,27 @@ import java.util.List;
 
 public class Hotels {
 	
-	private ReservationSystem hotelsreservation = new ReservationSystem();
+	private ReservationSystem hotels = new ReservationSystem();
 	
 	public void lakeWood() {
-		List<Integer> lakewoodRegular = new ArrayList<>();
-		lakewoodRegular.add(110);
-		lakewoodRegular.add(90);
+		List<Integer> lakewood = new ArrayList<>();
+		lakewood.add(110);
 		
-		hotelsreservation.lakewood.put("Regular", lakewoodRegular);
+		hotels.hotelReservationSystem.add(lakewood);
 	}
 	
 	public void bridgeWood() {
-		List<Integer> bridgeWoodRegular = new ArrayList<>();
-		bridgeWoodRegular.add(160);
-		bridgeWoodRegular.add(60);
+		List<Integer> bridgewood= new ArrayList<>();
+		bridgewood.add(160);
 		
-		hotelsreservation.bridgewood.put("Regualr", bridgeWoodRegular);
-		
+		hotels.hotelReservationSystem.add(bridgewood);
 	}
 	
 	public void ridgewood() {
-		List<Integer> ridgewoodRegular = new ArrayList<>();
-		ridgewoodRegular.add(220);
-		ridgewoodRegular.add(150);
+		List<Integer> ridgewood = new ArrayList<>();
+		ridgewood.add(220);
 		
-		hotelsreservation.ridgewood.put("Regular", ridgewoodRegular);
+		hotels.hotelReservationSystem.add(ridgewood);
 	}
 	
 	
