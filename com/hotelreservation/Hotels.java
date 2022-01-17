@@ -13,7 +13,14 @@ public class Hotels {
 		lakewoodRegular.add(110);
 		lakewoodRegular.add(90);
 		
+		List<Integer> lakewoodReward = new ArrayList<>();
+		lakewoodReward.add(80);
+		lakewoodReward.add(80);
+		
 		hotelsreservation.lakewood.put("Regular", lakewoodRegular);
+		hotelsreservation.lakewood.put("Reward", lakewoodReward);
+		hotelsreservation.lakewoodRating =3;
+		
 	}
 	
 	public void bridgeWood() {
@@ -21,8 +28,13 @@ public class Hotels {
 		bridgeWoodRegular.add(160);
 		bridgeWoodRegular.add(60);
 		
-		hotelsreservation.bridgewood.put("Regualr", bridgeWoodRegular);
+		List<Integer> bridgewoodReward = new ArrayList<>();
+		bridgewoodReward.add(110);
+		bridgewoodReward.add(50);
 		
+		hotelsreservation.bridgewood.put("Regualr", bridgeWoodRegular);
+		hotelsreservation.bridgewood.put("Reward", bridgewoodReward);
+		hotelsreservation.bridgewoodRating =4;
 	}
 	
 	public void ridgewood() {
@@ -30,7 +42,13 @@ public class Hotels {
 		ridgewoodRegular.add(220);
 		ridgewoodRegular.add(150);
 		
+		List<Integer> ridgewoodReward = new ArrayList<>();
+		ridgewoodReward.add(100);
+		ridgewoodReward.add(40);
+		
+		hotelsreservation.ridgewood.put("Reward", ridgewoodReward);
 		hotelsreservation.ridgewood.put("Regular", ridgewoodRegular);
+		hotelsreservation.ridgewoodRating = 5;	
 	}
 	
 	
