@@ -13,6 +13,7 @@ public class Hotels {
 	public void setlakeWood() {
 		List<Integer> lakewood = new ArrayList<>();
 		lakewood.add(110);
+		lakewood.add(90);
 		
 		this.lakewood.put("Regular", lakewood);
 	}
@@ -20,6 +21,7 @@ public class Hotels {
 	public void setbridgeWood() {
 		List<Integer> bridgewood= new ArrayList<>();
 		bridgewood.add(160);
+		bridgewood.add(50);
 		
 		this.bridgewood.put("Regular",bridgewood);
 	}
@@ -27,6 +29,7 @@ public class Hotels {
 	public void setridgewood() {
 		List<Integer> ridgewood = new ArrayList<>();
 		ridgewood.add(220);
+		ridgewood.add(150);
 	
 		this.ridgewood.put("Regular",ridgewood);
 	}

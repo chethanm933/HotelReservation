@@ -3,7 +3,6 @@ package com.hotelreservation;
 
 public class Main {
 	static MinCostHotel hotelCost = new MinCostHotel();
-	static ReservationSystem reserve = new ReservationSystem();
 	static Hotels hotel = new Hotels();
 	
 	

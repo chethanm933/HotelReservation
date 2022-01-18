@@ -3,7 +3,7 @@ import java.util.List;
 
 public class MinCostHotel {
 	
-	ReservationSystem reserve = new ReservationSystem();
+	
 	Hotels hotels = new Hotels();
 	 
 	public int minCostHotel(String input) {
