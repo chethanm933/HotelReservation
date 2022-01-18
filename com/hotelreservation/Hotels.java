@@ -10,12 +10,19 @@ public class Hotels {
 	HashMap<String, List<Integer>> bridgewood = new HashMap();
 	HashMap<String, List<Integer>> ridgewood = new HashMap();
 	
+	public static int lakewoodRating;
+	public static int bridgewoodRating;
+	public static int ridgewoodRating;
+	
+	
 	public void setlakeWood() {
 		List<Integer> lakewood = new ArrayList<>();
 		lakewood.add(110);
 		lakewood.add(90);
 		
 		this.lakewood.put("Regular", lakewood);
+		
+		lakewoodRating = 3;
 	}
 	
 	public void setbridgeWood() {
@@ -24,6 +31,8 @@ public class Hotels {
 		bridgewood.add(50);
 		
 		this.bridgewood.put("Regular",bridgewood);
+		
+		bridgewoodRating = 4;
 	}
 	
 	public void setridgewood() {
@@ -32,6 +41,8 @@ public class Hotels {
 		ridgewood.add(150);
 	
 		this.ridgewood.put("Regular",ridgewood);
+		
+		ridgewoodRating = 5;
 	}
 	
 	public void setHotels() {
