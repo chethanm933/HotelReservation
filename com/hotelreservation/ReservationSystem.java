@@ -7,6 +7,12 @@ import java.util.List;
 
 public class ReservationSystem {
 		
-		ArrayList<List<Integer>> hotelReservationSystem = new ArrayList<>();
+		Hotels hotel = new Hotels();
+	
+		HashMap<String, List<Integer>> lakewood = new HashMap();
+		HashMap<String, List<Integer>> bridgewood = new HashMap();
+		HashMap<String, List<Integer>> ridgewood = new HashMap();
+	
+		
 		
 }

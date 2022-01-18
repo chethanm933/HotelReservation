@@ -5,31 +5,36 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Hotels {
+
+	HashMap<String, List<Integer>> lakewood = new HashMap();
+	HashMap<String, List<Integer>> bridgewood = new HashMap();
+	HashMap<String, List<Integer>> ridgewood = new HashMap();
 	
-	private ReservationSystem hotels = new ReservationSystem();
-	
-	public void lakeWood() {
+	public void setlakeWood() {
 		List<Integer> lakewood = new ArrayList<>();
 		lakewood.add(110);
 		
-		hotels.hotelReservationSystem.add(lakewood);
+		this.lakewood.put("Regular", lakewood);
 	}
 	
-	public void bridgeWood() {
+	public void setbridgeWood() {
 		List<Integer> bridgewood= new ArrayList<>();
 		bridgewood.add(160);
 		
-		hotels.hotelReservationSystem.add(bridgewood);
+		this.bridgewood.put("Regular",bridgewood);
 	}
 	
-	public void ridgewood() {
+	public void setridgewood() {
 		List<Integer> ridgewood = new ArrayList<>();
 		ridgewood.add(220);
-		
-		hotels.hotelReservationSystem.add(ridgewood);
+	
+		this.ridgewood.put("Regular",ridgewood);
 	}
 	
-	
-	
+	public void setHotels() {
+		setlakeWood();
+		setbridgeWood();
+		setridgewood();
+	}
 	
 }
