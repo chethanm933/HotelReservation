@@ -30,10 +30,22 @@ public class MinCostHotel {
 		List<Integer> ridgewoodDetails =hotels.ridgewood.get(customerType);
 		int cost_of_ridgewood = ridgewoodDetails.get(0) * weekdays + ridgewoodDetails.get(1) * weekends;
 		
-		int minCost = Math.min(cost_of_lakewood, Math.min(cost_of_bridgewood, cost_of_ridgewood));
-		
-		return minCost;
-		
+		return minCostBasedOnRting(cost_of_lakewood, cost_of_bridgewood, cost_of_ridgewood);
+		}
+	
+		public int minCostBasedOnRting(int lakewood, int bridgewood, int ridgewood) {
+			int minCost = 0;
+			if(lakewood == bridgewood) {
+				return hotels.bridgewoodRating > hotels.lakewoodRating ? bridgewood : lakewood;
+			} else if(lakewood == ridgewood){
+				return hotels.ridgewoodRating > hotels.lakewoodRating ? lakewood : ridgewood;
+			} else if(bridgewood == ridgewood) {
+				return hotels.ridgewoodRating > hotels.bridgewoodRating ? ridgewood : bridgewood;
+			} else {
+			minCost = Math.min(lakewood, Math.min(bridgewood, ridgewood));
+			}
+			return minCost;
+			
 		}
 	}
 
