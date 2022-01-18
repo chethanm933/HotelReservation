@@ -16,11 +16,18 @@ public class Hotels {
 	
 	
 	public void setlakeWood() {
-		List<Integer> lakewood = new ArrayList<>();
-		lakewood.add(110);
-		lakewood.add(90);
+		List<Integer> lakewoodRegular = new ArrayList<>();
+		lakewoodRegular.add(110);
+		lakewoodRegular.add(90);
 		
-		this.lakewood.put("Regular", lakewood);
+		
+		List<Integer> lakeReward = new ArrayList<>();
+		lakeReward.add(80);
+		lakeReward.add(80);
+
+		this.lakewood.put("Regular", lakewoodRegular);
+		this.lakewood.put("Reward", lakeReward);
+		
 		
 		lakewoodRating = 3;
 	}
@@ -30,7 +37,12 @@ public class Hotels {
 		bridgewood.add(160);
 		bridgewood.add(50);
 		
+		List<Integer> bridgeReward = new ArrayList<>();
+		bridgeReward.add(110);
+		bridgeReward.add(50);
+		
 		this.bridgewood.put("Regular",bridgewood);
+		this.bridgewood.put("Reward", bridgeReward);
 		
 		bridgewoodRating = 4;
 	}
@@ -39,8 +51,13 @@ public class Hotels {
 		List<Integer> ridgewood = new ArrayList<>();
 		ridgewood.add(220);
 		ridgewood.add(150);
-	
+		
+		List<Integer> ridgeReward = new ArrayList<>();
+		ridgeReward.add(100);
+		ridgeReward.add(40);
+		
 		this.ridgewood.put("Regular",ridgewood);
+		this.ridgewood.put("Reward", ridgeReward);
 		
 		ridgewoodRating = 5;
 	}

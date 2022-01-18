@@ -34,15 +34,13 @@ public class MinCostHotel {
 		}
 	
 		public int minCostBasedOnRting(int lakewood, int bridgewood, int ridgewood) {
-			int minCost = 0;
-			if(lakewood == bridgewood) {
+			int minCost = Math.min(lakewood, Math.min(bridgewood, ridgewood));
+			if(minCost == lakewood && minCost == bridgewood) {
 				return hotels.bridgewoodRating > hotels.lakewoodRating ? bridgewood : lakewood;
-			} else if(lakewood == ridgewood){
+			} else if(minCost == lakewood && minCost == ridgewood){
 				return hotels.ridgewoodRating > hotels.lakewoodRating ? lakewood : ridgewood;
-			} else if(bridgewood == ridgewood) {
+			} else if(minCost == bridgewood && minCost == ridgewood) {
 				return hotels.ridgewoodRating > hotels.bridgewoodRating ? ridgewood : bridgewood;
-			} else {
-			minCost = Math.min(lakewood, Math.min(bridgewood, ridgewood));
 			}
 			return minCost;
 			
