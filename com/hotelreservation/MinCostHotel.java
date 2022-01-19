@@ -3,8 +3,14 @@ import java.util.List;
 
 public class MinCostHotel {
 	
-	ReservationSystem reserve = new ReservationSystem();
+	
 	Hotels hotels = new Hotels();
+	
+	public void setHotels() {
+		hotels.setlakeWood();
+		hotels.setbridgeWood();
+		hotels.setridgewood();
+	}
 	 
 	public int minCostHotel(String input) {
 		
