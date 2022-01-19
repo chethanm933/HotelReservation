@@ -5,6 +5,15 @@ public class MinCostHotel {
 	
 	
 	Hotels hotels = new Hotels();
+	
+	
+	public void setHotels() {
+		hotels.setlakeWood();
+		hotels.setbridgeWood();
+		hotels.setridgewood();
+		System.out.println(this.hotels.lakewoodList);
+	}
+	
 	 
 	public int minCostHotel(String input, String customerType) {
 		
@@ -20,14 +29,17 @@ public class MinCostHotel {
 			weekends++;
 			}
 		}
-			
-		List<Integer> lakewoodDetails = hotels.lakewood.get(customerType);
+		
+		System.out.println(hotels.lakewoodList);
+		
+		List<Integer> lakewoodDetails = hotels.lakewoodList.get(customerType);
+		
 		int cost_of_lakewood = lakewoodDetails.get(0) * weekdays + lakewoodDetails.get(1) * weekends;
 		
-		List<Integer> bridgewoodDetails = hotels.bridgewood.get(customerType);
+		List<Integer> bridgewoodDetails = hotels.bridgewoodList.get(customerType);
 		int cost_of_bridgewood = bridgewoodDetails.get(0) * weekdays + bridgewoodDetails.get(1) * weekends;
 		
-		List<Integer> ridgewoodDetails =hotels.ridgewood.get(customerType);
+		List<Integer> ridgewoodDetails =hotels.ridgewoodList.get(customerType);
 		int cost_of_ridgewood = ridgewoodDetails.get(0) * weekdays + ridgewoodDetails.get(1) * weekends;
 		
 		return minCostBasedOnRting(cost_of_lakewood, cost_of_bridgewood, cost_of_ridgewood);
@@ -35,6 +47,7 @@ public class MinCostHotel {
 	
 		public int minCostBasedOnRting(int lakewood, int bridgewood, int ridgewood) {
 			int minCost = Math.min(lakewood, Math.min(bridgewood, ridgewood));
+			System.out.println("Min Cost Hotel is :"+minCost+""+lakewood+""+bridgewood+""+ridgewood);
 			if(minCost == lakewood && minCost == bridgewood) {
 				return hotels.bridgewoodRating > hotels.lakewoodRating ? bridgewood : lakewood;
 			} else if(minCost == lakewood && minCost == ridgewood){

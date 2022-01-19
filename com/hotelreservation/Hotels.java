@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Hotels {
 
-	HashMap<String, List<Integer>> lakewood = new HashMap();
-	HashMap<String, List<Integer>> bridgewood = new HashMap();
-	HashMap<String, List<Integer>> ridgewood = new HashMap();
+	HashMap<String, List<Integer>> lakewoodList = new HashMap();
+	HashMap<String, List<Integer>> bridgewoodList = new HashMap();
+	HashMap<String, List<Integer>> ridgewoodList = new HashMap();
 	
 	public static int lakewoodRating;
 	public static int bridgewoodRating;
@@ -25,8 +25,8 @@ public class Hotels {
 		lakeReward.add(80);
 		lakeReward.add(80);
 
-		this.lakewood.put("Regular", lakewoodRegular);
-		this.lakewood.put("Reward", lakeReward);
+		this.lakewoodList.put("Regular", lakewoodRegular);
+		this.lakewoodList.put("Reward", lakeReward);
 		
 		
 		lakewoodRating = 3;
@@ -41,8 +41,8 @@ public class Hotels {
 		bridgeReward.add(110);
 		bridgeReward.add(50);
 		
-		this.bridgewood.put("Regular",bridgewood);
-		this.bridgewood.put("Reward", bridgeReward);
+		this.bridgewoodList.put("Regular",bridgewood);
+		this.bridgewoodList.put("Reward", bridgeReward);
 		
 		bridgewoodRating = 4;
 	}
@@ -56,16 +56,14 @@ public class Hotels {
 		ridgeReward.add(100);
 		ridgeReward.add(40);
 		
-		this.ridgewood.put("Regular",ridgewood);
-		this.ridgewood.put("Reward", ridgeReward);
+		
+		this.ridgewoodList.put("Regular",ridgewood);
+		this.ridgewoodList.put("Reward", ridgeReward);
+		
+		System.out.println();
 		
 		ridgewoodRating = 5;
 	}
 	
-	public void setHotels() {
-		setlakeWood();
-		setbridgeWood();
-		setridgewood();
-	}
 	
 }

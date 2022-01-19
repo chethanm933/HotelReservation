@@ -8,9 +8,9 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		String customerType = "Regular";
-		String input ="Regular, 11sep2020(fri), 12sep2020(sat)";
-		hotel.setHotels();
+		String customerType = "Reward";
+		String input =" 11sep2020(fri), 12sep2020(sat)";
+		hotelCost.setHotels();
 		int minHotel = hotelCost.minCostHotel(input, customerType);
 		System.out.println(minHotel);
 	}
