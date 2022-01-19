@@ -3,8 +3,13 @@ import java.util.List;
 
 public class MinCostHotel {
 	
-	
 	Hotels hotels = new Hotels();
+	
+	public void setHotels() {
+		hotels.setlakeWood();
+		hotels.setbridgeWood();
+		hotels.setridgewood();
+	}
 	 
 	public int minCostHotel(String input) {
 		
