@@ -4,6 +4,13 @@ import java.util.List;
 public class MinCostHotel {
 	
 	ReservationSystem reservationsystem  = new ReservationSystem();
+	Hotels hotels = new Hotels();
+	
+	public void setHotels() {
+		hotels.setlakeWood();
+		hotels.setbridgeWood();
+		hotels.setridgewood();
+	}
 	
 	public String minCostHotel(String input) {
 		String[] arr = input.split(",");
