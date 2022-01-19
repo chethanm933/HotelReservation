@@ -34,10 +34,4 @@ public class Hotels {
 		this.ridgewood.put("Regular",ridgewood);
 	}
 	
-	public void setHotels() {
-		setlakeWood();
-		setbridgeWood();
-		setridgewood();
-	}
-	
 }
